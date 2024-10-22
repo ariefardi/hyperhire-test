@@ -29,6 +29,12 @@ export default function Home() {
       <div className="text-xl desktop:block mobile:hidden h-screen w-full">
         <Image alt="desktop-image" objectFit="cover" src={ImageDesktop} fill />{" "}
       </div>
+
+      <div>
+        <div className="relative w-[211px] h-[211px] rounded-full border-2 border-red-100">
+          <div className="absolute top-[50%] right-[-2px] w-[2px] h-[2px] bg-black"></div>
+        </div>
+      </div>
     </div>
   );
 }
