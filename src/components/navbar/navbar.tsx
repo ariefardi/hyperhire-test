@@ -22,7 +22,7 @@ const Navbar = () => {
           <IcBurger />
         </div>
       </div>
-      <div className="w-full bg-black mobile:hidden">
+      <div className="w-full bg-black mobile:hidden flex justify-center">
         <div className="py-[36px] bg-black container flex flex-row">
           <div>
             <Image src={Logo} width={170} height={28} alt="logo" />
