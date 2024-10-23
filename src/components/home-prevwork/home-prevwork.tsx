@@ -31,7 +31,7 @@ const HomePrevwork = () => {
   return (
     <div>
       <div className="flex justify-center text-center text-[20px] desktop:text-[48px] font-bold relative">
-        <div className="relative mb-[50px] mt-[100px]">
+        <div className="relative mb-[50px]">
           <div className="absolute bg-linear-primary rounded-full w-[8px] h-[8px] top-0 left-[-9px] desktop:left-[-17px] "></div>
           PREVIOUS WORKS
         </div>

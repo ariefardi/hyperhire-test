@@ -1,5 +1,6 @@
 import React from "react";
 import IcCheck from "@/SV/ic_check";
+import IcArrow from "@/SV/ic_arrow";
 const HomeContact = () => {
   return (
     <div className="flex justify-center mt-[100px] desktop:mt-[300px]">
@@ -32,12 +33,16 @@ const HomeContact = () => {
           henry.lim@saltlux.com
         </div>
         <div className="w-full mt-[60px]">
-          <div className=" bg-[#141414] border border-white border-opacity-15 rounded-[10px] h-[61px] mb-[20px]">
+          <div className="relative bg-[#141414] border border-white border-opacity-15 rounded-[10px] h-[61px] mb-[20px]">
             <input
+              disabled
               className="w-full bg-transparent bg-[#141414] h-full px-[40px]"
               type="text"
               placeholder="영상 유형 선택"
             />
+            <div className="absolute right-[30px] top-[45%]">
+              <IcArrow />
+            </div>
           </div>
           <div className=" bg-[#141414] border border-white border-opacity-15 rounded-[10px] h-[61px] mb-[20px]">
             <input

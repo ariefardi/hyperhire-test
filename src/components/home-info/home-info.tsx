@@ -76,7 +76,7 @@ const HomeInfo = () => {
           플루닛 영상제작소에 맡겨주세요.
         </div>
       </div>
-      <div className="w-[240px] my-[96px] h-[1px] bg-[linear-gradient(90deg,#FFFFFF_0%,#FFFFFF_100%,#FFFFFF_0%)] desktop:w-[800px] opacity-40"></div>
+      <div className="w-[240px] my-[38px] desktop:my-[96px] h-[1px] bg-[linear-gradient(90deg,#FFFFFF_0%,#FFFFFF_100%,#FFFFFF_0%)] desktop:w-[800px] opacity-40"></div>
     </div>
   );
 };
