@@ -1,5 +1,6 @@
 import ImageDesktop from "@/img/home_bg_desktop.png";
 import ImageMobile from "@/img/home_bg_mobile.png";
+import ImageWidget from "@/img/widget.png";
 import Image from "next/image";
 
 import HomeContact from "@/components/home-contact";
@@ -9,7 +10,13 @@ import HomeProcess from "@/components/home-process";
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <div className="w-full max-w-screen mx-auto aspect-[375/361] block desktop:hidden">
+      <div className="relative mobile:hidden">
+        <div className="w-[125px] h-[125px] absolute right-[20px] z-[50] top-[30vh]">
+          <Image src={ImageWidget} fill alt="widget" />
+        </div>
+      </div>
+
+      <div className="w-full max-w-screen mx-auto aspect-[375/361] block desktop:hidden relative">
         <Image
           src={ImageMobile} // Replace with your image path
           alt="Responsive Image"
