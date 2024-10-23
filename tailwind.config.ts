@@ -16,6 +16,7 @@ const config: Config = {
       screens: {
         mobile: { max: "799px" }, // Mobile: anything under 800px
         medium: { max: "1600px" },
+        small: { max: "1024" },
         desktop: "800px", // Desktop: 800px and above
       },
       backgroundImage: {

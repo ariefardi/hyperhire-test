@@ -6,6 +6,7 @@ import ImageMobile from "@/img/home_bg_mobile.png";
 import HomeInfo from "@/components/home-info";
 import HomePrevwork from "@/components/home-prevwork";
 import HomeProcess from "@/components/home-process";
+import HomeContact from "@/components/home-contact";
 export default function Home() {
   return (
     <div className="flex flex-col">
@@ -26,6 +27,7 @@ export default function Home() {
       <HomeInfo />
       <HomePrevwork />
       <HomeProcess />
+      <HomeContact />
     </div>
   );
 }

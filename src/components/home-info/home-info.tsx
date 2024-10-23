@@ -52,7 +52,7 @@ const HomeInfo = () => {
       <div className="text-[16px] desktop:text-[32px] font-bold mt-[50px] text-center">
         AI VIDEO ON YOUR DEMAND
       </div>
-      <div className="text-center mobile:hidden desktop:flex flex-col opacity-60">
+      <div className="text-center mobile:hidden desktop:flex flex-col opacity-60 text-[20px]">
         <div className="mt-[20px]">
           가상인간 뿐 아니라 배경 이미지와 음악 생성 등 국내 최고의 생성 AI 기술에 <br />
           영상 전문가의 터치를 더해 비용 및 시간은 절감하고 퀄리티는 보장된 영상을 만듭니다. <br />
@@ -64,17 +64,19 @@ const HomeInfo = () => {
         </div>
       </div>
       <div className="text-center mobile:flex desktop:hidden text-[16px] flex-col px-[20px] opacity-60">
-        <div className="mt-[20px]">
-          가상인간 뿐 아니라 배경 이미지와 음악 생성 등 국내 최고의 생성 AI 기술에 영상 전문가의
-          터치를 더해 비용 및 시간은 절감하고 퀄리티는 보장된 영상을 만듭니다.
+        <div className="mt-[20px] tracking-tighter">
+          가상인간 뿐 아니라 배경 이미지와 음악 생성 등 <br /> 국내 최고의 생성 AI 기술에 영상
+          전문가의 터치를 더해 <br />
+          비용 및 시간은 절감하고 퀄리티는 보장된 영상을 만듭니다.
         </div>
-        <div className="mt-[30px]">
+        <div className="mt-[30px] tracking-tighter">
           가격은 절반으로, 속도는 두배로, 품질은 A++! <br />
           기업 홍보, 제품 소개, 교육 및 행사, 정보 및 안내 영상 등 <br />
           당신이 필요한 '그 영상'을 <br />
           플루닛 영상제작소에 맡겨주세요.
         </div>
       </div>
+      <div className="w-[240px] my-[96px] h-[1px] bg-[linear-gradient(90deg,#FFFFFF_0%,#FFFFFF_100%,#FFFFFF_0%)] desktop:w-[800px] opacity-40"></div>
     </div>
   );
 };

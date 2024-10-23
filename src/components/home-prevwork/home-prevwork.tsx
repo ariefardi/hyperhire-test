@@ -1,5 +1,32 @@
 import React from "react";
+import Image from "next/image";
+import Image1 from "@/img/image_1.png";
+import Image2 from "@/img/image_2.png";
+import Image3 from "@/img/image_3.png";
+import Image4 from "@/img/image_4.png";
+import Image5 from "@/img/image_5.png";
+import Image6 from "@/img/image_6.png";
+import Image7 from "@/img/image_7.png";
+import Image8 from "@/img/image_8.png";
+import Image9 from "@/img/image_9.png";
+import Image10 from "@/img/image_10.png";
+import Image11 from "@/img/image_11.png";
+import Image12 from "@/img/image_12.png";
 
+const IMAGES = [
+  Image1,
+  Image2,
+  Image3,
+  Image4,
+  Image5,
+  Image6,
+  Image7,
+  Image8,
+  Image9,
+  Image10,
+  Image11,
+  Image12,
+];
 const HomePrevwork = () => {
   return (
     <div>
@@ -10,42 +37,11 @@ const HomePrevwork = () => {
         </div>
       </div>
       <div className="grid gap-0 mobile:grid-cols-2 desktop:grid-cols-4">
-        <div className="aspect-w-16 aspect-h-9 border">
-          <img src="your-image-url-1.jpg" alt="Image 1" className="w-full h-full object-cover" />
-        </div>
-        <div className="aspect-w-16 aspect-h-9 border">
-          <img src="your-image-url-2.jpg" alt="Image 2" className="w-full h-full object-cover" />
-        </div>
-        <div className="aspect-w-16 aspect-h-9 border">
-          <img src="your-image-url-3.jpg" alt="Image 3" className="w-full h-full object-cover" />
-        </div>
-        <div className="aspect-w-16 aspect-h-9 border">
-          <img src="your-image-url-4.jpg" alt="Image 4" className="w-full h-full object-cover" />
-        </div>
-        <div className="aspect-w-16 aspect-h-9 border">
-          <img src="your-image-url-5.jpg" alt="Image 5" className="w-full h-full object-cover" />
-        </div>
-        <div className="aspect-w-16 aspect-h-9 border">
-          <img src="your-image-url-6.jpg" alt="Image 6" className="w-full h-full object-cover" />
-        </div>
-        <div className="aspect-w-16 aspect-h-9 border">
-          <img src="your-image-url-7.jpg" alt="Image 7" className="w-full h-full object-cover" />
-        </div>
-        <div className="aspect-w-16 aspect-h-9 border">
-          <img src="your-image-url-8.jpg" alt="Image 8" className="w-full h-full object-cover" />
-        </div>
-        <div className="aspect-w-16 aspect-h-9 border">
-          <img src="your-image-url-9.jpg" alt="Image 9" className="w-full h-full object-cover" />
-        </div>
-        <div className="aspect-w-16 aspect-h-9 border">
-          <img src="your-image-url-10.jpg" alt="Image 10" className="w-full h-full object-cover" />
-        </div>
-        <div className="aspect-w-16 aspect-h-9 border">
-          <img src="your-image-url-11.jpg" alt="Image 11" className="w-full h-full object-cover" />
-        </div>
-        <div className="aspect-w-16 aspect-h-9 border">
-          <img src="your-image-url-12.jpg" alt="Image 12" className="w-full h-full object-cover" />
-        </div>
+        {IMAGES.map((im, i) => (
+          <div key={i} className="aspect-w-16 aspect-h-9 border">
+            <Image src={im} alt="Image 1" className="w-full h-full object-cover" />
+          </div>
+        ))}
       </div>
     </div>
   );
