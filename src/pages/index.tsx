@@ -2,21 +2,14 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import ImageDesktop from "@/img/home_bg_desktop.png";
 import ImageMobile from "@/img/home_bg_mobile.png";
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
+import HomeInfo from "@/components/home-info";
+import HomePrevwork from "@/components/home-prevwork";
+import HomeProcess from "@/components/home-process";
 export default function Home() {
   return (
-    <div>
-      <div className="w-full max-w-[375px] mx-auto aspect-w-25 aspect-h-24 desktop:hidden block">
+    <div className="flex flex-col">
+      <div className="w-full max-w-screen mx-auto aspect-[375/361] block desktop:hidden">
         <Image
           src={ImageMobile} // Replace with your image path
           alt="Responsive Image"
@@ -30,11 +23,9 @@ export default function Home() {
         <Image alt="desktop-image" objectFit="cover" src={ImageDesktop} fill />{" "}
       </div>
 
-      <div>
-        <div className="relative w-[211px] h-[211px] rounded-full border-2 border-red-100">
-          <div className="absolute top-[50%] right-[-2px] w-[2px] h-[2px] bg-black"></div>
-        </div>
-      </div>
+      <HomeInfo />
+      <HomePrevwork />
+      <HomeProcess />
     </div>
   );
 }
