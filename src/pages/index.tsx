@@ -10,9 +10,9 @@ import HomeProcess from "@/components/home-process";
 import Navbar from "@/components/navbar/navbar";
 export default function Home() {
   return (
-    <div>
+    <div className="relative">
       <Navbar />
-      <div className="flex flex-col relative">
+      <div className="flex flex-col">
         <div className="relative mobile:hidden">
           <div className="w-[125px] h-[125px] absolute right-[20px] z-[50] top-[30vh]">
             <Image src={ImageWidget} fill alt="widget" />
@@ -29,9 +29,10 @@ export default function Home() {
             objectFit="cover" // Ensure the image covers the entire container without distortion
           />
         </div>
-        {/* <div className="text-xl desktop:block mobile:hidden h-screen w-full">
-        <Image alt="desktop-image" objectFit="cover" src={ImageDesktop} fill />{" "}
-      </div> */}
+        {/* Desktop Image */}
+        <div className="text-xl desktop:block mobile:hidden w-full h-screen overflow-hidden relative">
+          <Image alt="desktop-image" objectFit="cover" src={ImageDesktop} fill />
+        </div>
 
         <HomeInfo />
         <HomePrevwork />
